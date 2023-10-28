@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1698470989 source:d:\ciclo 03\algoritmo y estructura de datos\clases y practicas\talleres\listadoble\listadoble\main.cpp
+	<iostream>
+	"listadouble.h"
+
+1698470989 d:\ciclo 03\algoritmo y estructura de datos\clases y practicas\talleres\listadoble\listadoble\include\listadouble.h
+	<iostream>
+
+1698471330 source:d:\ciclo 03\algoritmo y estructura de datos\clases y practicas\talleres\listadoble\listadoble\src\listadouble.cpp
+	"listadouble.h"
+
