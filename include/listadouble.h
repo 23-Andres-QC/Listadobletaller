@@ -13,6 +13,7 @@ class Nodedoble
         Nodedoble* get_next(){return this->Next;};
         void set_Back(Nodedoble*v){this->Back=v;};
         Nodedoble* get_Back(){return this->Back;};
+
     private:
     int valor;
     Nodedoble *Next;

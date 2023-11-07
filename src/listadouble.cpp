@@ -58,7 +58,7 @@ void listadoble::ordenar(listadoble* A) {
     for (int i = 0; i < n - 1; i++) {
         Nodedoble* actual = A->head;
         for (int j = 0; j < n - i - 1; j++) {
-            if (actual->get_value() > actual->get_next()->get_value()) {
+            if (actual->get_value() > actual->get_next()->get_value()){
                 aux=actual->get_value();
                 actual->set_value(actual->get_next()->get_value());
                 actual->get_next()->set_value(aux);
@@ -96,21 +96,21 @@ void listadoble::eliminarelemetosrepetitivos() {
     while (actual != nullptr) {
         Nodedoble* comparador = actual->get_next();
         while (comparador != nullptr) {
-            if (actual->get_value() == comparador->get_value()) {
-                Nodedoble* siguiente = comparador->get_next();
-                if (comparador->get_Back() != nullptr) {
+            if (actual->get_value()==comparador->get_value()) {
+                Nodedoble* siguiente=comparador->get_next();
+                if (comparador->get_Back()!= nullptr) {
                     comparador->get_Back()->set_next(siguiente);
                 }
-                if (siguiente != nullptr) {
+                if (siguiente!=nullptr) {
                     siguiente->set_Back(comparador->get_Back());
                 }
                 delete comparador;
-                comparador = siguiente;
+                comparador=siguiente;
             } else {
-                comparador = comparador->get_next();
+                comparador=comparador->get_next();
             }
         }
-        actual = actual->get_next();
+        actual=actual->get_next();
     }
 }
 
